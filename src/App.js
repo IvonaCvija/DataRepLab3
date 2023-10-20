@@ -19,6 +19,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
+      {/*navigation bar */}
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="/">Navbar</Navbar.Brand>
@@ -29,9 +30,13 @@ function App() {
           </Nav>
         </Container>
       </Navbar>
+      {/*define routes for the application */}
       <Routes>
+        {/*route for home page, it uses the Contents component*/}
         <Route path='/' element ={<Contents></Contents>}></Route>
+        {/*route for read page, it uses the Read component*/}
         <Route path='/read' element ={<Read></Read>}></Route>
+        {/*route for create page, it uses the Create component*/}
         <Route path='/create' element ={<Create></Create>}></Route>
       </Routes>
 
