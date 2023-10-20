@@ -6,4 +6,5 @@ function Create(){
         </div>
     );
 }
+//exporting the Create component
 export default Create;
