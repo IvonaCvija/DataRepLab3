@@ -1,6 +1,8 @@
+//import the Books component from the "books" file
 import Books from "./books";
 
 function Read() {
+    //define an array of book data
     const data = [
         {
             "title": "Learn Git in a Month of Lunches",
@@ -42,8 +44,10 @@ function Read() {
     return (
         <div>
             <h2>Hello from read component!</h2>
+            {/*show the Books component and pass the book data as a prop named "myBooks"*/}
             <Books myBooks={data}></Books>
         </div>
     );
 }
+//export the Read component
 export default Read;
